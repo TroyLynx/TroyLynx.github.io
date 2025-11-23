@@ -1,0 +1,19 @@
+# Nmap 7.95 scan initiated Tue Apr  1 11:17:09 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN scan.txt -Pn 10.0.1.17
+Nmap scan report for 10.0.1.17
+Host is up (0.15s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.2p1 Debian 2+deb12u3 (protocol 2.0)
+| ssh-hostkey: 
+|   256 93:22:32:4d:88:4b:34:10:d2:ec:b5:5e:11:27:11:95 (ECDSA)
+|_  256 c9:f5:b7:d7:02:4a:cd:10:4c:3b:b1:a6:ec:69:4c:40 (ED25519)
+80/tcp open  http    Apache httpd 2.4.62 ((Debian))
+| http-robots.txt: 6 disallowed entries 
+| /data /static/ckeditor /static/enums /system /theme 
+|_/user
+|_http-server-header: Apache/2.4.62 (Debian)
+|_http-title: Example EchoCiTy-F
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr  1 11:23:51 2025 -- 1 IP address (1 host up) scanned in 401.51 seconds
